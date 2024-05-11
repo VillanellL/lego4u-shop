@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: 16834
+Build-Jdk: Oracle OpenJDK version 17.0.2
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: cn.wolfcode
+Main-Class: ${start-class}
+
