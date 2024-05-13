@@ -1,4 +1,4 @@
-package cn.wolfcode.service;
+package cn.wolfcode.redis.service;
 
 
 import cn.wolfcode.common.domain.UserInfo;
@@ -17,6 +17,7 @@ public interface IUserService {
      */
     UserResponse login(String phone, String password, String ip);
 
+    UserResponse register(String phone, String password, String ip) throws Exception;
     /**
      * 根据手机获取UserInfo
      * @param phone
