@@ -1,8 +1,10 @@
-package cn.wolfcode.redis.service;
+package cn.wolfcode.service;
 
 
 import cn.wolfcode.common.domain.UserInfo;
 import cn.wolfcode.domain.UserResponse;
+
+import java.sql.Connection;
 
 /**
  * Created by wolfcode-lanxw
