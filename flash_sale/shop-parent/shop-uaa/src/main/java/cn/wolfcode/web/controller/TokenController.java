@@ -3,7 +3,7 @@ import cn.wolfcode.common.domain.UserInfo;
 import cn.wolfcode.common.web.Result;
 import cn.wolfcode.domain.UserLogin;
 import cn.wolfcode.domain.UserResponse;
-import cn.wolfcode.service.IUserService;
+import cn.wolfcode.redis.service.IUserService;
 import cn.wolfcode.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -112,9 +112,9 @@ public class TokenController {
     }
 
     public static Connection getConn() throws Exception{
-        String url = "jdbc:mysql://127.0.0.1:3306/shop-uaa?serverTimezone=GMT%2B8&useSSL=false";
+        String url = "jdbc:mysql://localhost:3306/shop-uaa?serverTimezone=GMT%2B8&useSSL=false";
         String username = "root";
-        String password = "WolfCode_2017";
+        String password = "123456";
         String driver = "com.mysql.jdbc.Driver";
         Class.forName(driver);
         return DriverManager.getConnection(url,username, password);
