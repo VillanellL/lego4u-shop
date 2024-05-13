@@ -1,4 +1,4 @@
-package cn.wolfcode.redis.service.impl;
+package cn.wolfcode.service.impl;
 
 import cn.wolfcode.common.domain.UserInfo;
 import cn.wolfcode.domain.UserResponse;
@@ -9,7 +9,7 @@ import cn.wolfcode.mapper.UserMapper;
 import cn.wolfcode.mq.MQConstant;
 import cn.wolfcode.redis.CommonRedisKey;
 import cn.wolfcode.redis.UaaRedisKey;
-import cn.wolfcode.redis.service.IUserService;
+import cn.wolfcode.service.IUserService;
 import cn.wolfcode.util.MD5Util;
 import cn.wolfcode.web.msg.UAACodeMsg;
 import com.alibaba.fastjson.JSON;
