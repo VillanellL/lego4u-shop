@@ -1,5 +1,5 @@
-//  用户登录操作
-layui.form.on('submit(userLogins)', function (res) {
+//  用户注册操作
+layui.form.on('submit(userRegister)', function (res) {
     var formVal = res.field
     var currentParams = {
         phone: formVal.phone,
@@ -10,13 +10,13 @@ layui.form.on('submit(userLogins)', function (res) {
         return false;
     } else {
         ajaxHttp({
-            url: '/uaa/token',
+            url: '/uaa/register',
             type: 'POST',
             data: JSON.stringify(currentParams),
         }, function (params) {
             window.localStorage.setItem("token", params.data.token);
             window.localStorage.setItem("userInfo", JSON.stringify(params.data.userInfo));
-            window.location.href = "/index.html";
+            window.location.href = "/login.html";
         });
     }
     return false;
